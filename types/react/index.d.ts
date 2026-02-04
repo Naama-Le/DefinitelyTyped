@@ -2068,7 +2068,7 @@ declare namespace React {
 
     /**
      * @deprecated FormEvent doesn't actually exist.
-     *             You probably meant to use {@link ChangeEvent}, {@link InputEvent}, {@link SubmitEvent}, or just {@link SyntheticEvent} instead
+     *             You probably meant to use {@link ChangeEvent}, {@link InputEvent}, {@link }, or just {@link SyntheticEvent} instead
      *             depending on the event type.
      */
     interface FormEvent<T = Element> extends SyntheticEvent<T> {
@@ -2158,7 +2158,7 @@ declare namespace React {
     }
 
     interface SubmitEvent<T = Element> extends SyntheticEvent<T, NativeSubmitEvent> {
-        // Currently not exposed by Reat
+        // Currently not exposed by React
         // submitter: HTMLElement | null;
         // SubmitEvents are always targetted at HTMLFormElements.
         target: EventTarget & HTMLFormElement;
